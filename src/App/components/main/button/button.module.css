@@ -1,0 +1,22 @@
+    .btn {
+        border-radius: 44px;
+        background: #1986EC;
+        color: #FFFFFF;
+        font-size: 20px;
+        border: none;
+        transition: 0.3s;
+        width: 155px;
+        height: 60px;
+    }
+    
+    .btn:active,
+    .btn:focus {
+        transition: 0.3s;
+        font-size: 18px;
+        box-shadow: 0px 0px 14px 37px rgba(34, 60, 80, 0.2) inset;
+    }
+    
+    .btn:active,
+    .btn:hover {
+        cursor: url('../../../../../public/img/Icon.png') 6 6, auto;
+    }

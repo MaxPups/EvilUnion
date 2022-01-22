@@ -1,0 +1,38 @@
+        .card {
+            width: 485px;
+            height: 500px;
+            /* border: 1px solid red; */
+            padding: 44px;
+            padding-bottom: 16px;
+            transition: 0.3s;
+            background: #000000;
+        }
+        
+        .card:hover {
+            transition: 0.3s;
+        }
+        
+        .title {
+            /* font-family: 'Raleway', sans-serif; */
+            font-style: normal;
+            font-weight: bold;
+            font-size: 48px;
+            line-height: 100%;
+            color: #A0A0A0;
+        }
+        
+        .img {
+            margin-top: 44px;
+            width: 396px;
+            height: 200px;
+        }
+        
+        .lists {
+            margin-top: 44px;
+            list-style-type: none;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 17px;
+            line-height: 150%;
+            color: #A0A0A0;
+        }

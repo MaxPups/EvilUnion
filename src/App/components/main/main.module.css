@@ -1,0 +1,60 @@
+        .main {
+            background: #131313;
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            gap: 92px;
+            align-items: center;
+        }
+        
+        .btns {
+            /* border: 5px solid blue; */
+            max-width: 700px;
+            height: auto;
+            display: flex;
+            /* flex-direction: column; */
+            flex-wrap: wrap;
+            align-items: center;
+            gap: 10px 6px;
+        }
+        
+        .block_card {
+            /* border: 5px solid red; */
+            background: red;
+        }
+        
+        .card {
+            background: #000000;
+            width: 485px;
+            height: 500px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 24px;
+            line-height: 100%;
+            color: #A0A0A0;
+        }
+        
+        .card>img {
+            width: 60%;
+            height: 50%;
+        }
+        
+        .btns>button>span {
+            font-family: 'Raleway', sans-serif;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 100%;
+            color: #FFFFFF;
+            padding: 20px;
+        }
+        
+        .btns>button:hover,
+        .btns>button:active {
+            cursor: url('../../../../public/img/Icon.png') 6 6, auto;
+        }
