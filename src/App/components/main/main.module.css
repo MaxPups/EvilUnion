@@ -1,11 +1,14 @@
         .main {
-            background: #131313;
+            /* max-width: 980px; */
             width: 100vw;
-            height: 100vh;
+            /* height: 100vh; */
+            height: auto;
             display: flex;
             justify-content: center;
             gap: 92px;
             align-items: center;
+            margin: 0% auto;
+            margin-top: 57px;
         }
         
         .btns {
