@@ -1,6 +1,6 @@
 import style from './main.module.css';
 import { useEffect, useState, useMemo } from 'react';
-import { ButtonMy } from './button/button.jsx';
+// import { ButtonMy } from './button/button.jsx';
 import { Card } from './card/card';
 import axios from 'axios';
 // import { Modal } from './modal/modal';
@@ -17,8 +17,7 @@ export function Main() {
     let [pokemon, setPokemon] = useState([]);
     // для рендеринга карточки
     let [card, setCard] = useState();
-    // для popup
-    let [modal, setModal] = useState();
+    
 
     // делаем запрос для получение данных, которые заносим в кнопки
     useEffect(() => {
@@ -33,15 +32,13 @@ export function Main() {
     }
 
     // стили для кнопки/material UI
-    const styles = { borderRadius: '44px', background: '#1986EC', color: 'white', fontSize: '20px',  };
+    const styles = { borderRadius: '44px', background: '#1986EC', color: 'white', fontSize: '20px', height: '60px' };
 
 
     return (
         <main className={style.main}>
 
-            {/* {modal &&  <Modal card ={card} />} */}
             <div className={style.btns}>
-                {/* {pokemon.map((i, index)=>{return  <ButtonMy name={i.name} key={index} getUrl ={getUrl} url={i.url}/> })} */}
                 {pokemon.map((i, index) => {
                     return <Button variant="contained" style={styles} key={index} onClick={() => { getUrl(i) }}>
                         {i.name}
@@ -50,8 +47,6 @@ export function Main() {
 
             </div>
             <div className={style.block_card}>
-                {/* {card && <Card obj={card}  />} */}
-
                 {card ? <Card obj={card} /> : <div className={style.card}>
                     <h3>Выбери своего покемона</h3>
                     <img src='./img/pokemon.png'/>
